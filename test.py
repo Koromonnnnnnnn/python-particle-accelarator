@@ -14,7 +14,7 @@ xVel = []
 yVel = [] # velocity
 sizes = []
 ticker = []
-speed = 2
+speed = 3
 
 
 while not gameOver:
