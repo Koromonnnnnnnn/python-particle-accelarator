@@ -40,7 +40,7 @@ while not gameOver:
             xpos.append(450)
             ypos.append(450)
             sizes.append(1)
-            ticker.append(0)
+            #ticker.append(0)
             xVel.append(normalizedVelX)
             yVel.append(normalizedVelY)
 
@@ -52,10 +52,10 @@ while not gameOver:
     # physics
     for i in range(len(xpos)):
         
-        acceleration = (ticker[i] / 100) ** 2
-        xVel[i] = normalizedVelX * acceleration * 8
-        yVel[i] = normalizedVelY * acceleration * 8
-        ticker[i] += 1
+        #acceleration = (ticker[i] / 100) ** 2
+        #xVel[i] = normalizedVelX * acceleration * 8
+        #yVel[i] = normalizedVelY * acceleration * 8
+        #ticker[i] += 1
         
         # update pos
         xpos[i] += xVel[i]
