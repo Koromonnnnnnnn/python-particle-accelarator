@@ -5,6 +5,8 @@ gamescreen = pygame.display.set_mode((900, 900))
 pygame.display.set_caption("Particle Accelerator")
 clock = pygame.time.Clock()
 
+gameOver = False
+
 xpos = []  # position
 ypos = []
 xVel = []
@@ -17,13 +19,13 @@ for i in range(10):
     xVel.append(random.randint(-2, 2))
     yVel.append(random.randint(-2, 3))
 
-while True:
+while not gameOver:
     clock.tick(60)
 
     # Event Handle
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            break
+            gameOver = True
 
     # physics
     for i in range(10):
